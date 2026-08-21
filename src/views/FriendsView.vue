@@ -1,11 +1,22 @@
 <script setup lang="ts">
-import friends from '../data/friends.json'
+import friendsData from '../data/friends.json'
+
+function shuffle<T>(list: T[]): T[] {
+  const result = [...list]
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[result[i], result[j]] = [result[j], result[i]]
+  }
+  return result
+}
+
+const friends = shuffle(friendsData)
 </script>
 
 <template>
   <main class="page page-wide">
     <h1>友情链接</h1>
-    <p class="page-desc">一些朋友们。</p>
+    <p class="page-desc">随机排序，排名不分先后</p>
     <ul class="friend-list">
       <li v-for="f in friends" :key="f.link">
         <a class="friend-card" :href="f.link" target="_blank" rel="noopener noreferrer">
