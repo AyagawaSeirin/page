@@ -47,8 +47,7 @@ const socials: SocialLink[] = [
     </h1>
     <p class="name-latin">AyagawaSeirin</p>
 
-    <p class="intro">Developer · Network Engineer · Startup</p>
-    <p class="bio">she/her · based in Shenzhen</p>
+    <p class="intro">一般通过菜鸡开发&amp;网安&amp;网工 | 生活西化中 | she/her</p>
 
     <ul class="socials">
       <li v-for="s in socials" :key="s.name">
@@ -116,12 +115,6 @@ const socials: SocialLink[] = [
   margin: 1.5rem 0 0;
   font-size: 0.95rem;
   color: var(--fg-muted);
-}
-
-.bio {
-  margin: 0.4rem 0 0;
-  font-size: 0.875rem;
-  color: var(--fg-faint);
 }
 
 .socials {
