@@ -4,7 +4,6 @@ import friends from '../data/friends.json'
 
 <template>
   <main class="page page-wide">
-    <RouterLink class="back-link" to="/">← 返回首页</RouterLink>
     <h1>友情链接</h1>
     <p class="page-desc">一些朋友们。</p>
     <ul class="friend-list">

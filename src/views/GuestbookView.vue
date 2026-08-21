@@ -10,7 +10,6 @@ const giscusTheme = computed(() => (theme.value === 'dark' ? 'dark' : 'light'))
 
 <template>
   <main class="page">
-    <RouterLink class="back-link" to="/">← 返回首页</RouterLink>
     <h1>留言板</h1>
     <p class="page-desc">欢迎留言，需要登录 GitHub 账号。</p>
     <Giscus

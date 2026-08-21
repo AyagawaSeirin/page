@@ -48,6 +48,7 @@ const socials: SocialLink[] = [
     <p class="name-latin">AyagawaSeirin</p>
 
     <p class="intro">Developer · Network Engineer · Startup</p>
+    <p class="bio">she/her · based in Shenzhen</p>
 
     <ul class="socials">
       <li v-for="s in socials" :key="s.name">
@@ -64,17 +65,12 @@ const socials: SocialLink[] = [
         </a>
       </li>
     </ul>
-
-    <nav class="site-nav">
-      <RouterLink to="/guestbook">留言板</RouterLink>
-      <RouterLink to="/friends">友情链接</RouterLink>
-    </nav>
   </main>
 </template>
 
 <style scoped>
 .home {
-  min-height: 100dvh;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,6 +118,12 @@ const socials: SocialLink[] = [
   color: var(--fg-muted);
 }
 
+.bio {
+  margin: 0.4rem 0 0;
+  font-size: 0.875rem;
+  color: var(--fg-faint);
+}
+
 .socials {
   list-style: none;
   display: flex;
@@ -137,22 +139,6 @@ const socials: SocialLink[] = [
 }
 
 .socials a:hover {
-  color: var(--accent);
-}
-
-.site-nav {
-  margin-top: 3rem;
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.85rem;
-}
-
-.site-nav a {
-  color: var(--fg-faint);
-  transition: color 0.2s ease;
-}
-
-.site-nav a:hover {
   color: var(--accent);
 }
 

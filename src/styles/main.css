@@ -1,18 +1,18 @@
 :root {
-  --bg: #ffffff;
-  --fg: #1a1a1a;
-  --fg-muted: #6f6f6f;
-  --fg-faint: #9a9a9a;
-  --border: #e4e4e4;
+  --bg: #f4f8fc;
+  --fg: #344655;
+  --fg-muted: #708494;
+  --fg-faint: #93a3b0;
+  --border: #dde5ed;
   --accent: #2f6f4f;
 }
 
 :root[data-theme='dark'] {
-  --bg: #121212;
-  --fg: #e6e6e6;
-  --fg-muted: #9a9a9a;
-  --fg-faint: #6f6f6f;
-  --border: #2c2c2c;
+  --bg: #161b21;
+  --fg: #dbe3ea;
+  --fg-muted: #93a3b0;
+  --fg-faint: #6b7c8a;
+  --border: #2a323b;
   --accent: #7bbd9d;
 }
 
@@ -22,6 +22,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background: var(--bg);
 }
 
 body {
@@ -39,6 +40,13 @@ body {
     color 0.25s ease;
 }
 
+/* 页头常驻，视图占满剩余高度，首页据此居中 */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -49,9 +57,10 @@ a:hover {
 }
 
 .page {
+  width: 100%;
   max-width: 640px;
   margin: 0 auto;
-  padding: 4rem 1.25rem 3rem;
+  padding: 2.5rem 1.25rem 3rem;
 }
 
 .page h1 {
@@ -63,10 +72,4 @@ a:hover {
 .page-desc {
   color: var(--fg-muted);
   margin: 0 0 2.5rem;
-}
-
-.back-link {
-  display: inline-block;
-  color: var(--fg-muted);
-  margin-bottom: 2.5rem;
 }
