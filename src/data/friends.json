@@ -1,0 +1,20 @@
+[
+  {
+    "avatar": "https://avatars.githubusercontent.com/u/583231?v=4",
+    "name": "Octocat",
+    "description": "GitHub 的吉祥物，示例友链。",
+    "link": "https://github.com/octocat"
+  },
+  {
+    "avatar": "https://vuejs.org/logo.svg",
+    "name": "Vue.js",
+    "description": "渐进式 JavaScript 框架。",
+    "link": "https://vuejs.org"
+  },
+  {
+    "avatar": "https://vitejs.dev/logo.svg",
+    "name": "Vite",
+    "description": "下一代前端构建工具。",
+    "link": "https://vitejs.dev"
+  }
+]
